@@ -2,7 +2,7 @@
 export function register() {
    if ('serviceWorker' in navigator) {
      window.addEventListener('load', function() {
-       navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+       navigator.serviceWorker.register('/apy-dev-training/serviceWorker.js').then(function(registration) {
          // Registration was successful
          console.log('ServiceWorker registration successful with scope: ', registration.scope);
        }, function(err) {
