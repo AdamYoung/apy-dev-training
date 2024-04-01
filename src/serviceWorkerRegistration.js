@@ -1,33 +1,22 @@
-// This is a sample serviceWorkerRegistration.js file
-/* global self */
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
-  '/apy-dev-training/',
-  '/apy-dev-training/main.css',
-  '/apy-dev-training/main.js'
-];
-
-self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
-  );
-});
+// This is a serviceWorkerRegistration.js file
+export function register() {
+   if ('serviceWorker' in navigator) {
+     window.addEventListener('load', function() {
+       navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+         // Registration was successful
+         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+       }, function(err) {
+         // registration failed :(
+         console.log('ServiceWorker registration failed: ', err);
+       });
+     });
+   }
+ }
+ 
+ export function unregister() {
+   if ('serviceWorker' in navigator) {
+     navigator.serviceWorker.ready.then(function(registration) {
+       registration.unregister();
+     });
+   }
+ }
