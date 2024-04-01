@@ -2,9 +2,9 @@
 /* global self */
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/',
-  '/main.css',
-  '/main.js'
+  '/apy-dev-training/',
+  '/apy-dev-training/main.css',
+  '/apy-dev-training/main.js'
 ];
 
 self.addEventListener('install', function(event) {
