@@ -1,20 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Slideshow from './Slideshow'; // import the Slideshow component
 
 function App() {
   return (
     <div className="App">
-      <div class="slideshow-container">
-         <div class="mySlides">
-            <img src="/apy-dev-training/img/slime_slide_1.png" style="width:100%" />
-         </div>
-         <div class="mySlides">
-            <img src="/apy-dev-training/img/slime_slide_2.png" style="width:100%" />
-         </div>
-         <div class="mySlides">
-            <img src="/apy-dev-training/img/slime_slide_3.jpg" style="width:100%" />
-         </div>
-      </div>
+       <Slideshow />
     </div>
   );
 }
