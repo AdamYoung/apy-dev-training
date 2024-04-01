@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/apy-dev-training/static/css/main.c2256969.css",
-    "main.js": "/apy-dev-training/static/js/main.8eae7e9f.js",
+    "main.js": "/apy-dev-training/static/js/main.c33fc534.js",
     "static/media/logo.svg": "/apy-dev-training/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/apy-dev-training/index.html",
     "main.c2256969.css.map": "/apy-dev-training/static/css/main.c2256969.css.map",
-    "main.8eae7e9f.js.map": "/apy-dev-training/static/js/main.8eae7e9f.js.map"
+    "main.c33fc534.js.map": "/apy-dev-training/static/js/main.c33fc534.js.map"
   },
   "entrypoints": [
     "static/css/main.c2256969.css",
-    "static/js/main.8eae7e9f.js"
+    "static/js/main.c33fc534.js"
   ]
 }
