@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Slideshow() {
   const [slideIndex, setSlideIndex] = useState(0);
-  const slides = ["slide1.jpg", "slide2.jpg", "slide3.jpg"]; // replace with your slide data
+  const slides = ["img/slime_slide_1.png", "img/slime_slide_2.png", "img/slime_slide_3.jpg"]; // replace with your slide data
 
   useEffect(() => {
     const timer = setTimeout(() => {
